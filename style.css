@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+.container {
+    /* background-color: lightblue; */
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    transform-style: preserve-3d;
+    min-height: 80vh;
+    width: 25rem;
+    border-radius: 30px;
+    padding: 0rem 4rem;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+
+.sneaker {
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sneaker img {
+    width: 15rem;
+    z-index: 2;
+    transition: all 0.75s ease;
+}
+
+.circle {
+    width: 11rem;
+    height: 11rem;
+    border-radius: 50%;
+    background: linear-gradient(to right,
+            rgba(108, 169, 161, 0.75),
+            rgba(246, 108, 100, 0.75));
+    position: absolute;
+    z-index: 1;
+}
+
+.info h1 {
+    font-size: 2.2rem;
+    transition: all 0.75s ease;
+}
+
+.info h3 {
+    font-size: 1rem;
+    padding-bottom: 2rem;
+    padding-top: 0.7rem;
+    color: #585858;
+    font-weight: lighter;
+    transition: all 0.75s ease;
+}
+
+.sizes {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    transition: all 0.75s ease;
+}
+
+.sizes button {
+    padding: 0.4rem 1.4rem;
+    background: none;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #585858;
+}
+
+button.active {
+    background: #585858;
+    color: white;
+}
+
+.purchase {
+    margin-top: 4rem;
+
+}
+
+.purchase button {
+    width: 100%;
+    padding: 1rem 0rem;
+    background: #F66A6F;
+    border: none;
+    color: white;
+    font-weight: bolder;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.75s ease;
+}
